@@ -4,4 +4,4 @@ My Files project is an example of app in iOS 10 or higher that allows save state
 
 ## Application Gif
 
-
+![MyFiles](https://raw.githubusercontent.com/JLPenaLopez/MyFiles/master/MyFiles.gif)
