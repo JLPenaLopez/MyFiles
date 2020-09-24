@@ -25,7 +25,11 @@ final class AppDIContainer {
     
     // MARK: - View Models
     
-    func getFilesViewModel() -> FilesViewModel {
-        return FilesViewModel(getFilesUseCase: getFilesUseCase())
+    func getFilesViewModel(actions: FilesViewModelActions) -> FilesViewModel {
+        return FilesViewModel(getFilesUseCase: getFilesUseCase(), actions: actions)
+    }
+    
+    func getFileDetailsViewModel(myFile: MyFile) -> FilesDetailsViewModel {
+        return FilesDetailsViewModel(myFile: myFile)
     }
 }

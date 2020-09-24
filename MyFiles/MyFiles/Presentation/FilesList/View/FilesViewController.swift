@@ -60,5 +60,9 @@ class FilesViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.setup(with: viewModel.items.value[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectItem(at: indexPath.row)
+    }
 }
 

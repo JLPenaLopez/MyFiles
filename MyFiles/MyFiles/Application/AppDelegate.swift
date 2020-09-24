@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        coordinator = AppCoordinator(window: window!, appDIContainer: appDIContainer)
+        let navigationController = UINavigationController()
+        coordinator = AppCoordinator(window: window!, appDIContainer: appDIContainer,
+                                     navigationController: navigationController)
         coordinator?.start()
         
         return true

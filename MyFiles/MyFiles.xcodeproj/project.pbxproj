@@ -24,6 +24,9 @@
 		334C521F2515CB7B00A8AA53 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C521B2515CB7B00A8AA53 /* AppCoordinator.swift */; };
 		334C52202515CB7B00A8AA53 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C521D2515CB7B00A8AA53 /* AppDIContainer.swift */; };
 		334C52212515CB7B00A8AA53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C521E2515CB7B00A8AA53 /* AppDelegate.swift */; };
+		33A4C20D251C25B2000202E5 /* FileDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A4C20C251C25B2000202E5 /* FileDetailsViewController.storyboard */; };
+		33A4C210251C25D4000202E5 /* FileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4C20F251C25D4000202E5 /* FileDetailsViewController.swift */; };
+		33A4C213251C25EC000202E5 /* FileDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4C212251C25EC000202E5 /* FileDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		334C521B2515CB7B00A8AA53 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		334C521D2515CB7B00A8AA53 /* AppDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		334C521E2515CB7B00A8AA53 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33A4C20C251C25B2000202E5 /* FileDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileDetailsViewController.storyboard; sourceTree = "<group>"; };
+		33A4C20F251C25D4000202E5 /* FileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsViewController.swift; sourceTree = "<group>"; };
+		33A4C212251C25EC000202E5 /* FileDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +114,9 @@
 		334C51F62515CB4300A8AA53 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				334C51F72515CB4300A8AA53 /* ViewModel */,
+				33A4C209251C2559000202E5 /* FileDetails */,
+				33A4C208251C2542000202E5 /* FilesList */,
 				334C51FA2515CB4300A8AA53 /* Utils */,
-				334C51FF2515CB4300A8AA53 /* View */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -220,6 +226,41 @@
 			path = DIContainer;
 			sourceTree = "<group>";
 		};
+		33A4C208251C2542000202E5 /* FilesList */ = {
+			isa = PBXGroup;
+			children = (
+				334C51F72515CB4300A8AA53 /* ViewModel */,
+				334C51FF2515CB4300A8AA53 /* View */,
+			);
+			path = FilesList;
+			sourceTree = "<group>";
+		};
+		33A4C209251C2559000202E5 /* FileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				33A4C20B251C2570000202E5 /* ViewModel */,
+				33A4C20A251C256C000202E5 /* View */,
+			);
+			path = FileDetails;
+			sourceTree = "<group>";
+		};
+		33A4C20A251C256C000202E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				33A4C20C251C25B2000202E5 /* FileDetailsViewController.storyboard */,
+				33A4C20F251C25D4000202E5 /* FileDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		33A4C20B251C2570000202E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33A4C212251C25EC000202E5 /* FileDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A4C20D251C25B2000202E5 /* FileDetailsViewController.storyboard in Resources */,
 				334C51E32515C97500A8AA53 /* LaunchScreen.storyboard in Resources */,
 				334C520B2515CB4300A8AA53 /* FilesViewController.storyboard in Resources */,
 				334C51E02515C97500A8AA53 /* Assets.xcassets in Resources */,
@@ -292,10 +334,12 @@
 			files = (
 				334C52202515CB7B00A8AA53 /* AppDIContainer.swift in Sources */,
 				334C52052515CB4300A8AA53 /* FilesViewModel.swift in Sources */,
+				33A4C210251C25D4000202E5 /* FileDetailsViewController.swift in Sources */,
 				334C520C2515CB4300A8AA53 /* FileTableViewCell.swift in Sources */,
 				334C52212515CB7B00A8AA53 /* AppDelegate.swift in Sources */,
 				334C521F2515CB7B00A8AA53 /* AppCoordinator.swift in Sources */,
 				334C52062515CB4300A8AA53 /* FileItemViewModel.swift in Sources */,
+				33A4C213251C25EC000202E5 /* FileDetailsViewModel.swift in Sources */,
 				334C52172515CB5600A8AA53 /* MyFile.swift in Sources */,
 				334C52072515CB4300A8AA53 /* Storyboarded.swift in Sources */,
 				334C52092515CB4300A8AA53 /* Observable.swift in Sources */,
